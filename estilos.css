@@ -1,0 +1,556 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.cabecera {
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    padding: 15px 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(255, 42, 138, 0, 6);
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+.enlaces-navegacion a {
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+.btn-outline-info {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ffffff;
+}
+
+.btn-outline-info:hover {
+    background-color: #3f2a2d;
+    color: antiquewhite;
+    border: 1px solid #3f2a2d;
+}
+
+/* Estils per la targeta de bootsrap */
+
+.card {
+    /*  width: 30%; */
+    color: #3f2a2d;
+    background: rgba(235, 231, 231, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px rgb(0, 0, 0)
+}
+
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 95%;
+    min-height: 32vh;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#ESO1 .caja {
+    background-color: #59353c;
+    color: #e5baba;
+}
+
+#ESO1 .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ESO1 .imagenes-eso1 {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+}
+
+#ESO1 .imagenes-eso1 img {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.slide {
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+/* laterals */
+.lateral {
+    width: 180px;
+    height: 250px;
+    opacity: 0.6;
+    filter: brightness(70%);
+}
+
+/* central */
+.activa {
+    width: 350px;
+    height: 450px;
+    opacity: 1;
+    filter: brightness(100%);
+}
+
+.flecha {
+    border: none;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.flecha:hover {
+    transform: scale(1.1);
+}
+
+
+#ESO1 .imagenes-eso1 img:nth-child(2) {
+    flex: 2;
+}
+
+
+#ESO2 .caja {
+    background-color: #1b2328;
+    color: #c6d2da;
+}
+
+
+#ESO3 .caja {
+    background-color: #391616;
+    color: #d88d8b;
+}
+
+
+#ESO4 .caja {
+    background-color: #252b24;
+    color: #c6d1c8;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .barra-navegacion {
+
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    .enlaces-navegacion {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+
+    }
+
+    .enlaces-navegacion a {
+
+        display: block;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .caja {
+
+        width: 95%;
+        padding: 25px;
+        min-height: auto;
+
+    }
+
+    .titol-seccio {
+
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    .carousel-custom {
+
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .carousel-track {
+
+        gap: 10px;
+
+    }
+
+    .activa {
+
+        width: 180px;
+        height: 260px;
+
+    }
+
+    .lateral {
+
+        width: 90px;
+
+        height: 140px;
+
+    }
+
+    .flecha {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 1.5rem;
+
+    }
+
+    /* ---------- BOTONS ---------- */
+
+    .contenidor-botons {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    .boto-eso {
+
+        width: 200px;
+
+        height: 50px;
+
+        font-size: 0.95rem;
+
+    }
+
+    /* ---------- MODALS ---------- */
+
+    .modal-dialog {
+
+        max-width: 90%;
+
+        margin: auto;
+
+    }
+
+    .modal-custom {
+
+        padding: 30px 20px;
+
+    }
+
+    .titol-modal {
+
+        font-size: 2rem;
+
+    }
+
+    .subtitol-modal {
+
+        font-size: 1.3rem;
+
+    }
+
+    .text-modal {
+
+        width: 100%;
+
+        font-size: 0.95rem;
+
+    }
+
+}
+
+.contenidor-botons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.boto-eso {
+    height: 120px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.boto-eso:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- ESO2 ---------- */
+
+#ESO2 .caja {
+
+    min-height: 35vh;
+
+}
+
+#ESO2 .card-body {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+/* ---------- TITOLS SECCIONS ---------- */
+
+.titol-seccio {
+
+    margin: 0;
+
+    font-size: 3rem;
+
+    text-align: center;
+
+}
+
+/* BOTONS */
+
+.contenidor-botons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.boto-eso {
+
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+
+    width: 150px;
+
+    height: 55px;
+
+    padding: 0;
+
+    border-radius: 3px;
+
+    font-size: 1rem;
+
+    transition: 0.3s ease;
+
+}
+
+/* -- color eso2--- */
+
+#ESO2 .boto-eso {
+
+    background-color: #c6d2da;
+
+    color: #1b2328;
+
+}
+
+#ESO2 .boto-eso:hover {
+
+    background-color: rgb(170, 199, 210);
+
+}
+
+/* -- color eso3-- */
+
+#ESO3 .boto-eso {
+
+    background-color: #d88d8b;
+
+    color: #391616;
+
+}
+
+#ESO3 .boto-eso:hover {
+
+    background-color: #ffb2b2;
+
+}
+
+/* -- color eso4 -- */
+
+#ESO4 .boto-eso {
+
+    background-color: #c6d1c8;
+
+    color: #252b24;
+
+}
+
+#ESO4 .boto-eso:hover {
+
+    background-color: #9dbd97;
+
+}
+
+/* --costumitzar modals -- */
+
+.modal-custom {
+
+    background-color: #f5f5f5;
+
+    border-radius: 25px;
+
+    border: none;
+
+    padding: 50px;
+
+    position: relative;
+
+}
+
+.contingut-modal {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 20px;
+
+}
+
+.titol-modal {
+
+    font-size: 3rem;
+
+    margin: 0;
+
+    color: inherit;
+
+}
+
+.subtitol-modal {
+
+    font-size: 2rem;
+
+    margin: 0;
+
+    color: inherit;
+
+}
+
+.text-modal {
+
+    width: 70%;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    color: inherit;
+
+    margin-top: 30px;
+
+}
+
+.boto-tancar {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 25px;
+
+}
+
+/* ---------- MODALS ESO2 ---------- */
+
+.modal-eso2 {
+
+    background-color: #1d252b;
+
+    color: white;
+
+}
+
+/* ---------- MODALS ESO3 ---------- */
+
+.modal-eso3 {
+
+    background-color: #361616;
+
+    color: white;
+
+}
+
+/* ---------- MODALS ESO4 ---------- */
+
+.modal-eso4 {
+
+    background-color: #243126;
+
+    color: white;
+
+}
